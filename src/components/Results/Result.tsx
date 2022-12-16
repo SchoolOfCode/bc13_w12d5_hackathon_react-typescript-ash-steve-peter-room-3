@@ -6,7 +6,11 @@ type ResultProps = {
 }
 
 const Result = (props:ResultProps) => {
-    const {data} = props
+    const { data } = props
+    
+    console.log(data);
+    
+
     return (
         <div className="Results">
             <img src={`http://openweathermap.org/img/wn/${data.list[0].weather.icon}@2x.png`} alt="current weather"/>
