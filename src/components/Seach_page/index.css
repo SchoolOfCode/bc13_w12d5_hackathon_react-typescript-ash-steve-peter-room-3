@@ -1,0 +1,17 @@
+form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+form input {
+  border-radius: 6px;
+  /* border: 2px solid white; */
+  padding: .5rem;
+}
+
+form button {
+  border-radius: 6px;
+  padding-inline: 1rem;
+}

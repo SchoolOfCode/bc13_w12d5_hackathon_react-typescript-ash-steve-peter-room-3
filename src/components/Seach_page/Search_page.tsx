@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import Result from "../Results/Result";
+import './index.css'
 
 export default function SearchPage() {
 	const [data, setData] = useState(null);

@@ -1,7 +1,7 @@
 .summary{
-    display: grid;
-    column-gap: 0px;
-    grid-template-columns: auto auto 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .summary p{
     padding-top:15px;
@@ -9,15 +9,15 @@
     vertical-align: middle;
     line-height: normal;
 }
-.summary img {
-    
+.tiles {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.Results .tiles{
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
+.Results {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .tiles > div{
