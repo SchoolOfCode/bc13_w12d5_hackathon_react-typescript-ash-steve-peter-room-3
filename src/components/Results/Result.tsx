@@ -5,7 +5,7 @@ import temperature from "../images/temperature.png";
 import wind from "../images/wind.png";
 import pressure from "../images/pressure.png";
 import humidity from "../images/humidity.png";
-import sun from "../images/sun.png";
+//import sun from "../images/sun.png";
 
 
 type ResultProps = {

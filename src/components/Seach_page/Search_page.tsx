@@ -5,8 +5,7 @@ import Result from "../Results/Result";
 export default function SearchPage() {
 	const [data, setData] = useState(null);
 	const [inputText, setInputText] = useState('');
-	const [location, setLocation] = useState('London');
-
+	const [location, setLocation] = useState('');
 
 	useEffect(() => {
 		async function getWeather() {
@@ -25,7 +24,6 @@ export default function SearchPage() {
 	const getData = async () => {
 	const res = await axios.get('https://geolocation-db.com/json/')
 	//console.log(res.data);
-	//setIP(res.data.IPv4)
 	setLocation(res.data.city)
 	}
 	useEffect( () => {
