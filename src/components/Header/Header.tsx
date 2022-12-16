@@ -1,10 +1,11 @@
 
-
-
 const Header = () => {
-    return ( <div>
-        <h1>Hello World</h1>
-    </div> );
-}
- 
+  return (
+    <header>
+      <h1>Weather App</h1>
+      <p>Get the latest weather information for your location</p>
+    </header>
+  );
+};
+
 export default Header;
