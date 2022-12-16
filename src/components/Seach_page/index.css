@@ -1,0 +1,30 @@
+form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+form input {
+  border-radius: 10px;
+  /* border: 2px solid white; */
+  padding: .5rem;
+  height: 1.8rem;
+  width: 20%;
+  font-size: 16px;
+}
+
+form button {
+  border-radius: 10px;
+  padding-inline: 1rem;
+  width: 6%;
+  min-width: 4.5rem;
+  transition: 0.2s;
+}
+
+form button:hover{
+  cursor: pointer;
+  transition: 0.2s;
+  scale: 0.98;
+
+}

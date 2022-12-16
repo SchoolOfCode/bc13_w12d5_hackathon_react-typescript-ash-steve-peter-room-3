@@ -1,0 +1,35 @@
+.summary{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.summary p{
+    padding-top:15px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.tiles {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.Results {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tiles > div{
+    background-color: rgb(207, 207, 207);
+    border-radius: 20px;
+}
+
+.tiles img{
+    margin-top:20px;
+}
+
+.Results p{
+    font-size:20px;
+}
