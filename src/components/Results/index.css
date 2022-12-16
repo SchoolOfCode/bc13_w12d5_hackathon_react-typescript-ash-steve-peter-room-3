@@ -1,7 +1,7 @@
 .summary{
     display: grid;
     column-gap: 0px;
-    grid-template-columns: auto auto 80%;
+    grid-template-columns: auto auto 60%;
 }
 .summary p{
     padding-top:15px;

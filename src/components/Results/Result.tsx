@@ -10,16 +10,17 @@ import sun from "../images/sun.png";
 
 type ResultProps = {
     data : any;
+    city: string;
 }
 
 const Result = (props:ResultProps) => {
-    const { data } = props
+    const { data, city } = props
 
     return (
         <div className="Results">
             <div className="summary">
                 <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt="current weather"/>
-                <p>Summary: {data.weather[0].description}</p>
+                <p>Summary for {city}: <strong>{data.weather[0].description}</strong></p>
             </div>
             <div className='tiles'>
                 <WeatherTiles image={temperature} title="Temperature" data={Math.round((data.main.temp-273)*100)/100}/>
