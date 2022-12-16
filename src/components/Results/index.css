@@ -5,9 +5,13 @@
 }
 .summary p{
     padding-top:15px;
-    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
-
+.summary img {
+    
+}
 
 .Results .tiles{
     display: grid;
