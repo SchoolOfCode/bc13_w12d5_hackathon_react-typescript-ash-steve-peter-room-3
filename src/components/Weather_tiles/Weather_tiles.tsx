@@ -1,5 +1,7 @@
 const Weather_tiles = () => {
-    return (  );
+    return (
+        <div></div>
+    );
 }
  
 export default Weather_tiles;
