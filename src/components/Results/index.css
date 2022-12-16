@@ -1,7 +1,7 @@
 .summary{
-    display: grid;
-    column-gap: 0px;
-    grid-template-columns: auto auto 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .summary p{
     padding-top:15px;
@@ -10,11 +10,15 @@
     line-height: normal;
 }
 
-.Results .tiles{
+.tiles {
     display: grid;
-    column-gap: 50px;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.Results {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .tiles > div{

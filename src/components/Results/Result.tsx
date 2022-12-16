@@ -23,10 +23,10 @@ const Result = (props:ResultProps) => {
                 <p>Summary for {city}: <strong>{data.weather[0].description}</strong></p>
             </div>
             <div className='tiles'>
-                <WeatherTiles image={temperature} title="Temperature" data={Math.round((data.main.temp-273)*100)/100}/>
-                <WeatherTiles image={wind} title="Wind" data={data.wind.speed}/>
-                <WeatherTiles image={humidity} title="Humidity" data={data.main.humidity}/>
-                <WeatherTiles image={pressure} title="Pressure" data={data.main.pressure}/>
+                <WeatherTiles image={temperature} title="Temperature" data={Math.round((data.main.temp-273)*100)/100} unit={"°C"}/>
+                <WeatherTiles image={wind} title="Wind" data={data.wind.speed} unit={"mph"}/>
+                <WeatherTiles image={humidity} title="Humidity" data={data.main.humidity} unit={"gm³"}/>
+                <WeatherTiles image={pressure} title="Pressure" data={data.main.pressure} unit={"psi"}/>
             </div>
         </div>
     );
