@@ -1,0 +1,12 @@
+.Results{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.Results > div{
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+
+}
