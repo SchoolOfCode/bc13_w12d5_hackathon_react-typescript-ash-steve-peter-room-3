@@ -10,7 +10,7 @@ const WeatherTiles = (props:WeatherTilesProps) => {
     const {image, title, data} = props
     return (
         <div className={title}>
-            <img src={image}/>
+            <img src={image} alt="weather"/>
             <h3>{title}</h3>
             <p>{data}</p>
         </div>

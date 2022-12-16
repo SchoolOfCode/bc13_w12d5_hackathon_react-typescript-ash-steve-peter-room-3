@@ -1,25 +1,31 @@
 import WeatherTiles from "../WeatherTiles/WeatherTiles";
 import "./index.css";
 
+import temperature from "../images/temperature.png";
+import wind from "../images/wind.png";
+import pressure from "../images/pressure.png";
+import humidity from "../images/humidity.png";
+
+
 type ResultProps = {
     data : any;
 }
 
 const Result = (props:ResultProps) => {
     const { data } = props
-    
-    console.log(data);
-    
 
     return (
         <div className="Results">
-            <img src={`http://openweathermap.org/img/wn/${data.list[0].weather.icon}@2x.png`} alt="current weather"/>
-            <p>{data.list[0].weather.description}</p>
-            <WeatherTiles image={"../images/temperature"} title="Temperature" data={data.list[0].main.temp-273}/>
-            <WeatherTiles image={"../images/wind"} title="Wind" data={data.list[0].wind.speed}/>
-            <WeatherTiles image={"../images/humidity"} title="Humidity" data={data.list[0].main.humidity}/>
-            <WeatherTiles image={"../images/pressure"} title="Pressure" data={data.list[0].main.pressure}/>
-            
+            <div className="summary">
+                <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt="current weather"/>
+                <p>Summary: {data.weather[0].description}</p>
+            </div>
+            <div className='tiles'>
+                <WeatherTiles image={temperature} title="Temperature" data={Math.round((data.main.temp-273)*100)/100}/>
+                <WeatherTiles image={wind} title="Wind" data={data.wind.speed}/>
+                <WeatherTiles image={humidity} title="Humidity" data={data.main.humidity}/>
+                <WeatherTiles image={pressure} title="Pressure" data={data.main.pressure}/>
+            </div>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import Header from '../header/Header';
+import Header from '../Header/Header';
 import SearchPage from '../Seach_page/Search_page';
 import './App.css';
 

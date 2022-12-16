@@ -1,12 +1,30 @@
-.Results{
+.summary{
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: auto auto 80%;
+}
+.summary p{
+    padding-top:15px;
+    text-align: left;
+}
+
+
+.Results .tiles{
     display: grid;
     column-gap: 50px;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
 }
 
-.Results > div{
+.tiles > div{
     background-color: rgb(207, 207, 207);
-    border-radius: 10px;
+    border-radius: 20px;
+}
 
+.tiles img{
+    margin-top:20px;
+}
+
+.Results p{
+    font-size:20px;
 }

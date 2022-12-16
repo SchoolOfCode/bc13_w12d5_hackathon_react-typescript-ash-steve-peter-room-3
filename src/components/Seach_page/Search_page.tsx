@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Result from "../results/Result";
+import Result from "../Results/Result";
 
 export default function SearchPage() {
 	const [data, setData] = useState(null);
